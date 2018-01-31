@@ -10,13 +10,13 @@
             min="0"
             max="24"
             class="pl-3"
-            thumb-label>
-          </v-slider>
+            thumb-label
+          />
         </v-card>
       </v-flex>
-      <v-spacer></v-spacer>
+      <v-spacer />
       <v-flex xs6 offset-md3 offset-xs1>
-        <v-card v-bind:class="{[`elevation-${selected}`]: true }">
+        <v-card :class="{[`elevation-${selected}`]: true }">
           <v-card-media height="300px" src="https://picsum.photos/300/400?image=586">
             <span class="headline white--text pl-3 pt-3">Here it Comes </span>
           </v-card-media>
@@ -27,11 +27,11 @@
 </template>
 <script>
 export default {
-  name: "ImageView",
-  data() {
+  name: 'ImageView',
+  data () {
     return {
       selected: 0
     }
   }
-};
+}
 </script>

@@ -9,13 +9,13 @@
             min="0"
             max="24"
             class="pl-3"
-            thumb-label>
-          </v-slider>
+            thumb-label
+          />
         </v-card>
       </v-flex>
-      <v-spacer></v-spacer>
+      <v-spacer />
       <v-flex xs6 offset-md3 offset-xs1>
-        <v-card v-bind:class="{[`elevation-${selected}`]: true }">
+        <v-card :class="{[`elevation-${selected}`]: true }">
           <v-card-text
             text-xs-center
             ma-0
@@ -32,11 +32,11 @@
 </template>
 <script>
 export default {
-  name: "TextView",
-  data() {
+  name: 'TextView',
+  data () {
     return {
       selected: 0
     }
   }
-};
+}
 </script>
