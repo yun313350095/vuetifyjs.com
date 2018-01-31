@@ -1,6 +1,6 @@
 <template>
   <v-container grid-list-xl text-xs-center>
-    <v-spacer></v-spacer>
+    <v-spacer />
     <v-layout row wrap>
       <v-flex xs6 offset-md3 offset-xs1>
         <v-card>
