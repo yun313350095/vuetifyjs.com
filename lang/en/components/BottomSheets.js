@@ -10,8 +10,7 @@ export default {
     inset: {
       header: 'Inset bottom sheets',
       desc: 'Bottom sheets can be inset, reducing their maximum width on desktop to 70%. This can be further reduced manually using the `width` prop. We also showcase dynamic class binding using the Vuetify breakpoint object.'
-    }
-    ,
+    },
     chatBottomSheet: {
       header: 'A fixed display of an embedded application in bottom sheet',
       desc: 'Shows a example of an chat application within a bottom sheet.'
