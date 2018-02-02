@@ -84,7 +84,7 @@
               <v-divider
                 v-else-if="item.divider"
                 :inset="item.inset"
-                :key="index"/>
+                :key="index"></v-divider>
               <v-list-tile
                 avatar
                 v-else
@@ -95,11 +95,12 @@
                 <v-list-tile-content>
                   <v-list-tile-title
                     v-html="item.title"
-                    class="black--text"/>
+                    class="black--text"></v-list-tile-title>
                   <v-list-tile-sub-title
                     v-html="item.subtitle"
                     class="black--text">
-                <v-list-tile-sub-title/></v-list-tile-sub-title></v-list-tile-content>
+                  </v-list-tile-sub-title>
+                </v-list-tile-content>
               </v-list-tile>
             </template>
           </v-list>
@@ -110,7 +111,7 @@
 </template>
 <script>
 export default {
-  data() {
+  data () {
     return {
       sheet: '',
       items: [
@@ -144,7 +145,7 @@ export default {
             "<span class='text--primary'>Monica Smith</span> &mdash; I can be in your neighborhood..."
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
