@@ -5,7 +5,7 @@
         slot="activator"
         color="cyan"
         dark>See who's online, chat!<v-icon
-          size="10px"
+          size="18px"
           class="pl-3">chat</v-icon></v-btn>
       <v-layout >
         <v-flex
@@ -18,7 +18,7 @@
             <v-card-title
               primary
               class="title">Chats <v-icon
-                size="10px"
+                size="18px"
                 class="pl-3">chat</v-icon></v-card-title>
             <v-card-text>
               <v-btn
