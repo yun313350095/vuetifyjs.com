@@ -1,29 +1,34 @@
 <template>
   <div class="text-xs-center">
-    <v-bottom-sheet inset >
+    <v-bottom-sheet inset>
       <v-btn
         slot="activator"
         color="purple"
-        dark>Click me Again</v-btn>
+        dark
+      >Click me Again</v-btn>
       <v-layout
         row
-        wrap>
+        wrap
+      >
         <v-flex
           xs3
           v-for="tile in tiles"
           :key="tile.title"
-          d-flex>
+          d-flex
+        >
           <v-card
             flat
             tile>
             <v-card-text>
               <v-avatar
                 size="32px"
-                tile>
+                tile
+              >
                 <img
                   :src="`/static/doc-images/bottom-sheets/${tile.img}`"
                   height="90px"
-                  :alt="tile.title">
+                  :alt="tile.title"
+                >
               </v-avatar>
               <span class="hidden-sm-and-down">{{ tile.title }}</span>
             </v-card-text>
