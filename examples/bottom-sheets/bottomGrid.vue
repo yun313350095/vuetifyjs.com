@@ -5,7 +5,8 @@
         slot="activator"
         color="purple"
         dark
-      >Click me Again</v-btn>
+      >
+      Click me Again</v-btn>
       <v-layout
         row
         wrap
