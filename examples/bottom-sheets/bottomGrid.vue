@@ -6,7 +6,7 @@
         color="purple"
         dark
       >
-      Click me Again</v-btn>
+      Click Again</v-btn>
       <v-layout
         row
         wrap
