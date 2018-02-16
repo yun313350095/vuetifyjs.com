@@ -1,6 +1,6 @@
 <template lang="pug">
   doc-view
-    template(slot-scope="{ namespace }")
+    template(slot-scope="{namespace}")
       section#playground
         section-head(:value="`${namespace}.playgroundHeader`")
         v-container(fluid)

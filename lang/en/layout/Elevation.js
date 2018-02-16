@@ -25,6 +25,6 @@ export default {
   ],
   playgroundHeader: 'Playground',
   elevationHeader: 'Elevation basic',
-  textHeader: 'Text model using v-card',
+  textHeader: 'Text model with v-card',
   imageHeader: 'Image with v-card media'
 }

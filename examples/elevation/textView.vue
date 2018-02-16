@@ -35,7 +35,7 @@
             class="blue-grey lighten-3 black--text"
           >
             <div>
-              Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et
+              Phasellus feugiat arcu sapien, iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et
               faucibus. {{ selected }}
             </div>
           </v-card-text>
