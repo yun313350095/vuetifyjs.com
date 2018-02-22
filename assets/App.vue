@@ -1,14 +1,14 @@
 <template lang="pug">
   v-fade-transition(appear)
     v-app(v-cloak v-if="!examples")
-      app-drawer
-      app-toolbar
-      app-view
-      app-fab
-      app-snackbar
+      //- app-drawer
+      //- app-toolbar
+      master-view
+      //- app-fab
+      //- app-snackbar
 
-    div(v-else)#app
-      router-view
+    //- div(v-else)#app
+      //- router-view
 </template>
 
 <script>
@@ -17,6 +17,7 @@
   import AppSnackbar from '@/components/core/AppSnackbar'
   import AppToolbar from '@/components/core/AppToolbar'
   import AppView from '@/components/core/AppView'
+  import MasterView from '@/components/views/MasterView'
   import Meta from '@/mixins/meta'
 
   import { mapState } from 'vuex'
@@ -29,7 +30,8 @@
       AppFab,
       AppSnackbar,
       AppToolbar,
-      AppView
+      AppView,
+      MasterView
     },
 
     mixins: [Meta],

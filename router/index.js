@@ -43,6 +43,10 @@ export function createRouter (store) {
     scrollBehavior,
     routes: [
       {
+        path: '/:lang',
+        component: () => import(/* webpackChunkName: "routes" */'@/components/views/MasterView.vue')
+      },
+      {
         path: '/:lang([a-z]{2,3}|[a-z]{2,3}-[a-zA-Z]{4}|[a-z]{2,3}-[A-Z]{2,3})',
         component: () => import(/* webpackChunkName: "routes" */'@/components/views/RootView.vue'),
         props: route => ({ lang: route.params.lang }),
