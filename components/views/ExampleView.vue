@@ -1,8 +1,5 @@
 <template lang="pug">
-  doc-view(
-    :toc="toc"
-    :id="folder"
-  )
+  doc-view(:toc="toc")
     template(slot-scope="{ namespace }")
       section(v-if="usage")#usage
         section-head(value="Generic.Pages.usage")

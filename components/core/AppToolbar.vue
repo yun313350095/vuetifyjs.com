@@ -49,7 +49,7 @@
           style="min-width: 64px"
         )
           img(
-            :src="`https://countryflags.io/${currentLanguage.country}/flat/32.png`"
+            :src="`http://www.countryflags.io/${currentLanguage.country}/flat/32.png`"
             width="32px"
           )
         v-list(light)
@@ -144,7 +144,7 @@
         v-if="isStore && cart"
         flat
         :to="{ name: 'store/Cart' }"
-        dark
+        active-class="btn"
       )
         v-badge(color="red" left :value="cart.lineItems.length")
           template(slot="badge") {{ cart.lineItems.length }}

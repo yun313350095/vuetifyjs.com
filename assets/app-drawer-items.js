@@ -128,6 +128,11 @@ export default [
       { name: 'touch-support', title: 'Touch support' }
     ]
   },
+  {
+    name: 'store/Index',
+    title: 'Store',
+    icon: 'mdi-store'
+  },
   { divider: true },
   { header: 'Additional resources' },
   {
