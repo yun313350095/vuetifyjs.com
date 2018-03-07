@@ -1,4 +1,5 @@
 const fs = require('fs')
+const url = require('url')
 const path = require('path')
 const LRU = require('lru-cache')
 const express = require('express')
@@ -69,28 +70,40 @@ const serve = (path, cache) => express.static(resolve(path), {
   maxAge: cache && isProd ? 1000 * 60 * 60 * 24 * 30 : 0
 })
 
+const httpsRedirect = (req, res, next) => {
+  if (!isProd) return next()
+  if (req.secure || req.headers['x-forwarded-proto'] === 'https') return next()
+  res.redirect(301, 'https://' + req.hostname + req.originalUrl)
+}
+
 app.use(cookieParser())
 app.use(compression({ threshold: 0 }))
-app.use(favicon('./static/favicon.ico'))
-app.use('/static/manifest.json', serve('./manifest.json', true))
-app.use('/static', serve('./static', true))
-app.use('/public', serve('./public', true))
-app.use('/static/robots.txt', serve('./robots.txt'))
-app.use('/releases', serve('./releases'))
-app.use('/themes', serve('./themes'))
-app.get('/releases/:release', (req, res) => {
+app.use('/favicon.ico', httpsRedirect, favicon('./static/favicon.ico'))
+app.use('/static/manifest.json', httpsRedirect, serve('./manifest.json', true))
+app.use('/static', httpsRedirect, serve('./static', true))
+app.use('/public', httpsRedirect, serve('./public', true))
+app.use('/static/robots.txt', httpsRedirect, serve('./robots.txt'))
+app.use('/releases', httpsRedirect, serve('./releases'))
+app.use('/themes', httpsRedirect, serve('./themes'))
+app.get('/releases/:release', httpsRedirect, (req, res) => {
   res.setHeader('Content-Type', 'text/html')
   res.sendFile(resolve(`./releases/${req.params.release}`))
 })
 
-app.get('/sitemap.xml', (req, res) => {
+app.get('/sitemap.xml', httpsRedirect, (req, res) => {
   res.setHeader('Content-Type', 'text/xml')
   res.sendFile(resolve('./static/sitemap.xml'))
 })
 
 // 301 redirect for changed routes
 Object.keys(redirects).forEach(k => {
-  app.get(k, (req, res) => res.redirect(301, redirects[k]))
+  app.get(k, (req, res) => {
+    if (req.isSecure || req.headers['x-forwarded-proto'] === 'https') {
+      res.redirect(301, redirects[k])
+    } else {
+      res.redirect(301, 'https://' + req.hostname + redirects[k] + url.parse(req.originalUrl).query)
+    }
+  })
 })
 
 // since this app has no user-specific content, every page is micro-cacheable.
@@ -146,7 +159,7 @@ function render (req, res) {
 
 const languageRegex = /^\/([a-z]{2,3}|[a-z]{2,3}-[a-zA-Z]{4}|[a-z]{2,3}-[A-Z]{2,3})(\/.*)?$/
 
-app.get(languageRegex, isProd ? render : (req, res) => {
+app.get(languageRegex, httpsRedirect, isProd ? render : (req, res) => {
   readyPromise.then(() => render(req, res))
 }, cacheMiddleware)
 
@@ -154,7 +167,11 @@ app.get(languageRegex, isProd ? render : (req, res) => {
 app.get('*', (req, res) => {
   let lang = req.cookies.currentLanguage || req.acceptsLanguages(availableLanguages) || 'en'
   if (!languageRegex.test('/' + lang)) lang = 'en'
-  res.redirect(302, `/${lang}${req.originalUrl}`)
+  if (req.isSecure || req.headers['x-forwarded-proto'] === 'https') {
+    res.redirect(302, `/${lang}${req.originalUrl}`)
+  } else {
+    res.redirect(302, `https://${req.hostname}/${lang}${req.originalUrl}`)
+  }
 })
 
 const port = process.env.PORT || 8095
