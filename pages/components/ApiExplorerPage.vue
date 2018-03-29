@@ -102,7 +102,7 @@
                 <parameters
                   :headers="headers[tabItem]"
                   :items="currentApi[tabItem]"
-                  :namespace="namespace"
+                  :namespace="computedNamespace"
                   :search="search"
                   :target="current"
                   :type="tabItem"
@@ -150,9 +150,9 @@
           .map(text => {
             const icon = this.getIcon(text)
             return Object.assign({}, {
-              text,
+              icon,
               subtext: this.getSubText(icon),
-              icon
+              text
             })
           })
           .sort((a, b) => {
@@ -160,6 +160,24 @@
             if (b.text > a.text) return -1
             return 0
           })
+      },
+      computedComponents () {
+        let list = []
+        this.computedApi.forEach(c => {
+          if (c.subtext === 'Component') list.push(c)
+        })
+        return list
+      },
+      computedNamespace () {
+        let component = this.current.split('-')
+        component.shift()
+        console.log(component)
+
+        let namespace = component.map(text => {
+          return text[0].toUpperCase() + text.substr(1)
+        })
+        console.log(namespace)
+        return `Components.${namespace.join('')}`
       }
     },
 
