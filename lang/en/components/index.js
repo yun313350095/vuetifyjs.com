@@ -1,3 +1,4 @@
+import App from './App'
 import Alerts from './Alerts'
 import ApiExplorer from './ApiExplorer'
 import Avatars from './Avatars'
@@ -41,6 +42,7 @@ import Toolbars from './Toolbars'
 import Tooltips from './Tooltips'
 
 export default {
+  App,
   Alerts,
   ApiExplorer,
   Avatars,
