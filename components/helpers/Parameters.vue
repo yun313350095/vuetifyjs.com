@@ -90,6 +90,8 @@
 
         const specialLevelDesc = `${this.namespace}.${this.type}.${this.target}['${name}']`
         const componentLevelDesc = `${this.namespace}.${this.type}['${name}']`
+        const componentLevelDescPlural = `${this.namespace}s.${this.type}['${name}']`
+        console.log(componentLevelDesc)
         const mixinDesc = `Mixins.${camelSource}.${this.type}['${name}']`
         const genericDesc = `Generic.${capitalize(this.type)}['${name}']`
 
@@ -103,6 +105,14 @@
           devPrepend = '**SPECIAL** - '
         } else if (this.$te(componentLevelDesc)) {
           description = this.$t(componentLevelDesc)
+
+          if (description.indexOf('Mixins.') > -1) {
+            description = this.$t(description)
+          }
+
+          devPrepend = '**COMPONENT** - '
+        } else if (this.$te(componentLevelDescPlural)) {
+          description = this.$t(componentLevelDescPlural)
 
           if (description.indexOf('Mixins.') > -1) {
             description = this.$t(description)
