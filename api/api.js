@@ -910,6 +910,20 @@ module.exports = {
     ],
     "mixins": []
   },
+  "v-card-expansion": {
+    "props": [
+      {
+        "name": "cover",
+        "type": "Boolean",
+        "default": "false",
+        "source": null
+      }
+    ],
+    "mixins": [],
+    "slots": [
+      "default"
+    ]
+  },
   "v-card-title": {
     "props": [
       {

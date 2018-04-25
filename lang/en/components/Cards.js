@@ -5,12 +5,14 @@ export default {
     'v-card',
     'v-card-media',
     'v-card-title',
-    'v-card-actions'
+    'v-card-text',
+    'v-card-actions',
+    'v-card-expansion'
   ],
   examples: [{
     components: {
       header: 'Components',
-      desc: 'A card has 4 basic components, `v-card-media`, `v-card-title`, `v-card-text` and `v-card-actions`.'
+      desc: 'A card has 5 basic components, `v-card-media`, `v-card-title`, `v-card-text`, `v-card-actions` and `v-card-expansion`.'
     },
     mediaWithText: {
       header: 'Media with text',
@@ -38,6 +40,7 @@ export default {
     primaryTitle: 'Applies primary title specific padding.',
     raised: 'Specifies a higher default elevation',
     src: 'The image to display as a background.',
-    tile: 'Turn the card into a tile by removing the border radius'
+    tile: 'Turn the card into a tile by removing the border radius',
+    cover: 'Text will cover the card info'
   }
 }
