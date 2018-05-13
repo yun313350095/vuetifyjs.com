@@ -1,0 +1,443 @@
+{
+  "alerts": [
+    "closable",
+    "contextual",
+    "icon",
+    "outline",
+    "transition"
+  ],
+  "alignment": [
+    "example"
+  ],
+  "avatars": [
+    "advanced",
+    "iconAndText",
+    "standard"
+  ],
+  "badges": [
+    "character",
+    "icon",
+    "inline",
+    "overlap",
+    "visibility"
+  ],
+  "bottom-navigation": [
+    "colorAndShift",
+    "iconsAndText",
+    "toggle"
+  ],
+  "bottom-sheets": [
+    "inset",
+    "standard"
+  ],
+  "breadcrumbs": [
+    "iconDividers",
+    "textDividers"
+  ],
+  "buttons": [
+    "appBar",
+    "block",
+    "depressed",
+    "dropdown",
+    "flat",
+    "floating",
+    "icon",
+    "loaders",
+    "outline",
+    "raised",
+    "round",
+    "sizing",
+    "toggle",
+    "usage"
+  ],
+  "cards": [
+    "components",
+    "customActions",
+    "grids",
+    "horizontal",
+    "mediaWithText"
+  ],
+  "carousels": [
+    "customIcons",
+    "customTransition",
+    "default",
+    "hideControls",
+    "hideDelimiters"
+  ],
+  "chips": [
+    "closable",
+    "colored",
+    "default",
+    "icon",
+    "inSelects",
+    "label",
+    "outline"
+  ],
+  "colors": [
+    "classes",
+    "colorPack",
+    "textClasses"
+  ],
+  "data-iterator": [
+    "simple",
+    "slots"
+  ],
+  "data-tables": [
+    "crud",
+    "customIcons",
+    "editdialog",
+    "expand",
+    "footer",
+    "headerCell",
+    "headerless",
+    "headers",
+    "noData",
+    "pageText",
+    "paginate",
+    "progress",
+    "search",
+    "select",
+    "server",
+    "sort",
+    "standard"
+  ],
+  "date-pickers": [
+    "dateAllowedDates",
+    "dateBirthday",
+    "dateColorable",
+    "dateCurrent",
+    "dateDialogAndMenu",
+    "dateEvents",
+    "dateFormatting",
+    "dateIcons",
+    "dateInternationalization",
+    "dateLight",
+    "datePickerDate",
+    "dateReadonly",
+    "dateWidth",
+    "monthAllowedMonths",
+    "monthColorable",
+    "monthCurrent",
+    "monthDialogAndMenu",
+    "monthIcons",
+    "monthInternationalization",
+    "monthLight",
+    "monthReadonly",
+    "monthWidth"
+  ],
+  "dialogs": [
+    "form",
+    "fullscreen",
+    "modal",
+    "overflowed",
+    "scrollable",
+    "simple",
+    "withoutActivator"
+  ],
+  "display": [
+    "hiddenElements"
+  ],
+  "dividers": [
+    "dividerList",
+    "dividerListPortrait",
+    "dividerPortrait",
+    "fullBleed",
+    "inset",
+    "lightAndDark",
+    "subheaders"
+  ],
+  "expansion-panels": [
+    "accordion",
+    "customIcons",
+    "disabledAndReadonly",
+    "expand",
+    "external",
+    "focusable",
+    "popout"
+  ],
+  "floating-action-buttons": [
+    "displayAnimation",
+    "lateralScreens",
+    "promotedAction",
+    "small",
+    "speedDial"
+  ],
+  "footer": [
+    "companyFooter",
+    "default",
+    "indigoFooter",
+    "tealFooter"
+  ],
+  "forms": [
+    "basicValidation",
+    "submitAndClear",
+    "validationWithSubmitAndClear",
+    "veeValidate",
+    "vuelidate"
+  ],
+  "grid": [
+    "directionAndAlign",
+    "grid",
+    "nestedGrid",
+    "offset",
+    "order",
+    "rowColumnBreakpoint",
+    "spacer",
+    "tags",
+    "uniqueLayouts"
+  ],
+  "grid-lists": [
+    "default",
+    "subheader"
+  ],
+  "icons": [
+    "buttons",
+    "color",
+    "fontAwesome",
+    "mdi",
+    "standard"
+  ],
+  "inputs": [
+    "usage"
+  ],
+  "jumbotrons": [
+    "color",
+    "gradient",
+    "gradientWithImage",
+    "usage"
+  ],
+  "layouts": [
+    "baseline",
+    "baselineFlipped",
+    "centered",
+    "complex",
+    "dark",
+    "googleContacts",
+    "googleKeep",
+    "googleYoutube",
+    "sandbox"
+  ],
+  "lists": [
+    "actionTitleAndSubtitle",
+    "actionWithTitleAndSubtitle",
+    "avatarSubheaderTitleAndAction",
+    "avatarThreeLines",
+    "avatarTitleAndAction",
+    "avatarTwoLines",
+    "cardList",
+    "expansionLists",
+    "iconTwoLinesAndAction",
+    "subheadingsAndDividers",
+    "titleSubtitleActionsAndActionText"
+  ],
+  "menus": [
+    "absolute",
+    "absoluteWithoutActivator",
+    "activator",
+    "customTransition",
+    "hover",
+    "menus",
+    "popover"
+  ],
+  "navigation-drawers": [
+    "combined",
+    "dark",
+    "mini",
+    "nested",
+    "permanent",
+    "permanentClipped",
+    "permanentFloating",
+    "permanentFloatingCard",
+    "persistent",
+    "temporary"
+  ],
+  "paginations": [
+    "disabled",
+    "icons",
+    "limit",
+    "long",
+    "round",
+    "short"
+  ],
+  "parallax": [
+    "content",
+    "customHeight",
+    "default"
+  ],
+  "progress": [
+    "circularColored",
+    "circularDefault",
+    "circularIndeterminate",
+    "circularRotate",
+    "circularSizeAndWidth",
+    "linearBuffer",
+    "linearCustomColors",
+    "linearCustomHeightAndContextualColors",
+    "linearDeterminate",
+    "linearIndeterminate",
+    "linearQueryIndeterminateAndDeterminate"
+  ],
+  "resizing": [
+    "default"
+  ],
+  "ripples": [
+    "buttons",
+    "customColor",
+    "customRipple",
+    "expansionPanels",
+    "htmlElement",
+    "navigationDrawers",
+    "tabs",
+    "toolbars"
+  ],
+  "scrolling": [
+    "default",
+    "options",
+    "usage"
+  ],
+  "selection-controls": [
+    "checkboxesArray",
+    "checkboxesBoolean",
+    "checkboxesColors",
+    "checkboxesInlineTexfield",
+    "checkboxesStates",
+    "example",
+    "radiosColors",
+    "radiosDefault",
+    "radiosDirection",
+    "switchesArray",
+    "switchesBoolean",
+    "switchesColors",
+    "switchesStates"
+  ],
+  "selects": [
+    "asynchronous",
+    "autocomplete",
+    "combobox",
+    "customFilter",
+    "customTextAndValue",
+    "icons",
+    "light",
+    "multiple",
+    "scopedSlots",
+    "tags",
+    "usage"
+  ],
+  "sliders": [
+    "customColors",
+    "discrete",
+    "editableNumericValue",
+    "icons",
+    "minMax",
+    "range",
+    "slotThumbLabel",
+    "step",
+    "thumbLabel",
+    "tickLabels",
+    "ticks",
+    "usage"
+  ],
+  "snackbars": [
+    "contextual",
+    "position"
+  ],
+  "spacing": [
+    "horizontal"
+  ],
+  "steppers": [
+    "alternateError",
+    "alternateLabels",
+    "alternativeError",
+    "dynamic",
+    "editable",
+    "error",
+    "example",
+    "horizontal",
+    "linear",
+    "nonEditable",
+    "nonLinear",
+    "optional",
+    "vertical",
+    "verticalError"
+  ],
+  "subheaders": [
+    "grid",
+    "list",
+    "menu",
+    "social"
+  ],
+  "tabs": [
+    "alignWithTitle",
+    "centered",
+    "content",
+    "desktop",
+    "fixedTabs",
+    "grow",
+    "icons",
+    "iconsAndText",
+    "overflowToMenu",
+    "pagination",
+    "right",
+    "search",
+    "toolbar"
+  ],
+  "text-fields": [
+    "box",
+    "characterCounter",
+    "customColors",
+    "customValidation",
+    "fullWidthWithCharacterCounter",
+    "hint",
+    "icon",
+    "label",
+    "masks",
+    "multiLine",
+    "password",
+    "prefixesAndSuffixes",
+    "progressBar",
+    "requiredFields",
+    "singleLine",
+    "solo",
+    "textarea",
+    "validation"
+  ],
+  "time-pickers": [
+    "time24hFormat",
+    "timeAllowedTimes",
+    "timeColorable",
+    "timeDialogAndMenu",
+    "timeLight",
+    "timeWidth"
+  ],
+  "toolbars": [
+    "appBar",
+    "appBarExtension",
+    "appBarItems",
+    "appBarMenu",
+    "columnWidthWithHierarchy",
+    "dense",
+    "denseProminent",
+    "flexibleAndCard",
+    "floatingWithSearch",
+    "prominent",
+    "scrolling",
+    "systemBarsStatusWindow",
+    "usage",
+    "variations"
+  ],
+  "tooltips": [
+    "alignment",
+    "default",
+    "visibility"
+  ],
+  "touch-support": [
+    "default"
+  ],
+  "transitions": [
+    "customOrigin",
+    "fadeTransition",
+    "scaleTransition",
+    "slideXTransitions",
+    "slideYTransitions"
+  ]
+}
