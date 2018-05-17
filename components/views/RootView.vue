@@ -37,25 +37,36 @@
 
     created () {
       this.$i18n.locale = this.lang
-      // if (this.$ssrContext && !this.languageIsValid) this.$ssrContext.res.status(404)
     },
 
+    // async beforeRouteEnter (to, from, next) {
+    //   await this.loadLang(to)
+    //   next()
+    // },
+
     async beforeRouteUpdate (to, from, next) {
-      const locale = to.params.lang
-      const localeFile = camelActual(locale)
-
-      if (this.loadedLangs.indexOf(locale) < 0) {
-        await import(
-          /* webpackChunkName: "lang-[request]" */
-          /* webpackMode: "lazy-once" */
-          `@/lang/${localeFile}`
-        ).then(msgs => this.$i18n.setLocaleMessage(locale, msgs.default))
-          .catch(err => Promise.resolve(err))
-      }
-
-      document.querySelector('html').setAttribute('lang', locale)
-      this.$i18n.locale = locale
+      await this.loadLang(to)
       next()
+    },
+
+    methods: {
+      async loadLang (to, from, next) {
+        const locale = to.params.lang
+        const localeFile = camelActual(locale)
+
+        console.log(localeFile)
+
+        if (!this.loadedLangs.includes(locale)) {
+          await import(
+            /* webpackChunkName: "lang-[request]" */
+            `@/lang/${localeFile}/index.js`
+          ).then(msgs => this.$i18n.setLocaleMessage(locale, msgs.default))
+            .catch(err => Promise.resolve(err))
+        }
+
+        document.querySelector('html').setAttribute('lang', locale)
+        this.$i18n.locale = locale
+      }
     }
   }
 </script>
