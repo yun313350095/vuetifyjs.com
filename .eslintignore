@@ -1,6 +1,5 @@
 /api/**/*
-/releases/**/*
-/static/**/*
 /dist/**/*
+/src/examples/**/*
 /public/**/*
-/admin/**/*
+/static/**/*
