@@ -1,0 +1,10 @@
+{
+  "header": "Image",
+  "headerText": "",
+  "examples": {
+    "containCover": {
+      "header": "Contain and Cover",
+      "desc": "If the provided aspect ratio doesn't match that of the actual image, the default behaviour is to fill as much space as possible, clipping the sides of the image. Enabling the `contain` prop will prevent this, but will result in empty space at the sides."
+    }
+  }
+}
