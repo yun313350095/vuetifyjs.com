@@ -338,7 +338,8 @@
     "components": ["v-img"],
     "examples": [
       "usage",
-      "containCover"
+      "containCover",
+      "maxHeight"
     ],
     "spec": false
   },
