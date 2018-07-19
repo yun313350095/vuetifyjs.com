@@ -13,7 +13,7 @@
               <v-card flat tile class="d-flex">
                 <v-img
                   :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-                  :lazySrc="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+                  :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
                   aspect-ratio="1"
                   class="grey lighten-2"
                 >
@@ -24,7 +24,7 @@
                     justify-center
                     ma-0
                   >
-                    <v-progress-circular indeterminate color="grey lighten-5"/>
+                    <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                   </v-layout>
                 </v-img>
               </v-card>

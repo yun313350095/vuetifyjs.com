@@ -6,7 +6,7 @@
     style="min-height: 434px"
   >
     <v-fade-transition mode="out-in">
-      <v-layout wrap v-if="show" key="0">
+      <v-layout v-if="show" key="0" wrap>
         <v-flex xs6>
           <v-card>
             <v-img
@@ -54,7 +54,7 @@
         </v-flex>
       </v-layout>
 
-      <v-layout v-else justify-center key="1">
+      <v-layout v-else key="1" justify-center>
         <v-btn flat @click="show = true">Load images</v-btn>
       </v-layout>
     </v-fade-transition>
