@@ -45,11 +45,11 @@
                     </div>
                   </v-flex>
                   <v-flex xs5>
-                    <v-card-media
+                    <v-img
                       src="https://cdn.vuetifyjs.com/images/cards/foster.jpg"
                       height="125px"
                       contain
-                    ></v-card-media>
+                    ></v-img>
                   </v-flex>
                 </v-layout>
               </v-container>
@@ -67,11 +67,11 @@
                     </div>
                   </v-flex>
                   <v-flex xs5>
-                    <v-card-media
+                    <v-img
                       src="https://cdn.vuetifyjs.com/images/cards/halcyon.png"
                       height="125px"
                       contain
-                    ></v-card-media>
+                    ></v-img>
                   </v-flex>
                 </v-layout>
               </v-container>
