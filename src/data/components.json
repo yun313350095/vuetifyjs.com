@@ -420,6 +420,13 @@
     ],
     "spec": false
   },
+  "paper": {
+    "components": ["v-paper"],
+    "examples": [
+      "usage"
+    ],
+    "spec": false
+  },
   "parallax": {
     "components": ["v-parallax"],
     "examples": [

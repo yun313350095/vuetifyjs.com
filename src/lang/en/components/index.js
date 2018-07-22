@@ -29,6 +29,7 @@ import Menus from './Menus'
 import NavigationDrawers from './NavigationDrawers'
 import OverflowBtns from './OverflowBtns'
 import Paginations from './Paginations'
+import Paper from './Paper'
 import Parallax from './Parallax'
 import Progress from './Progress'
 import SelectionControls from './SelectionControls'
@@ -77,6 +78,7 @@ export default {
   NavigationDrawers,
   OverflowBtns,
   Paginations,
+  Paper,
   Parallax,
   Progress,
   SelectionControls,

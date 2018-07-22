@@ -335,6 +335,12 @@
     "description": "The v-pagination component is used to separate long sets of data so that it is easier for a user to consume information.",
     "keywords": "pagination, components"
   },
+  "components/paper": {
+    "h1": "Paper",
+    "title": "Paper Component",
+    "description": "The v-paper component is the foundation of sheets in the Vuetify framework.",
+    "keywords": "paper, sheets, v-paper"
+  },
   "components/parallax": {
     "h1": "Parallax",
     "title": "Parallax Component",

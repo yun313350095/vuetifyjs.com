@@ -1,0 +1,10 @@
+{
+  "header": "Paper",
+  "headerText": "The paper component is the go to simple container for creating advanced designs. It contains the baseline functionality for interacting with the Vuetify theme and allows you to specify a background color, dark or light variant and elevation.",
+  "examples": {
+    "usage": {
+      "header": "Usage",
+      "desc": ""
+    }
+  }
+}
