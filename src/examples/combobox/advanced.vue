@@ -15,7 +15,7 @@
       <v-list-tile>
         <span class="subheading">Create</span>
         <v-chip
-          :color="`${colors[nonce - 1]} lighten-3`"
+          :color="`${colors[(this.nonce % this.colors.length) - 1]} lighten-3`"
           label
           small
         >
@@ -121,7 +121,7 @@
           if (typeof v === 'string') {
             v = {
               text: v,
-              color: this.colors[this.nonce - 1]
+              color: this.colors[this.nonce % this.colors.length]
             }
 
             this.items.push(v)
